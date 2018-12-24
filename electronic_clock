@@ -1,9 +1,9 @@
-# electronic clock
 v = int(input()) # 3602
 x = v % 3600
-w = v / 3600
-y = v / 60 % 60
-x = v % 3600
+v = v // 3600
+w = v % 60
+v = v // 60
+y = v % 3600
 print(w)
 print(y)
 print(x)
